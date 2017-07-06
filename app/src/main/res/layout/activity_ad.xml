@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_ad_back" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:text="00:00"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rlExit"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menu_ad_iab_btn_back"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="10%" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_ad_iab_title"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="35%" />
+
+        <ImageView
+            android:id="@+id/rlAd1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_ad_iab_btn1"
+            app:layout_heightPercent="50%"
+            app:layout_marginLeftPercent="10%"
+            app:layout_widthPercent="40%" />
+
+        <ImageView
+            android:id="@+id/rlAd2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_ad_iab_btn2"
+            app:layout_heightPercent="50%"
+            app:layout_marginRightPercent="10%"
+            app:layout_widthPercent="40%" />
+
+    </android.support.percent.PercentRelativeLayout>
+</layout>

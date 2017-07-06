@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_back">
+
+        <ImageView
+            android:id="@+id/ivMenuBack"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menu_back_btn"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="15%" />
+
+        <ImageView
+            android:id="@+id/ivMenuTitle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_title"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="20%" />
+
+        <ImageView
+            android:id="@+id/ivMenuBtn1"
+            android:layout_below="@+id/ivMenuTitle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_parent_btn"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="80%" />
+
+        <ImageView
+            android:id="@+id/ivMenuBtn2"
+            android:layout_below="@+id/ivMenuBtn1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_ad_btn"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="80%" />
+
+        <ImageView
+            android:id="@+id/ivMenuBtn3"
+            android:layout_below="@+id/ivMenuBtn2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_gp_btn"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="80%" />
+
+        <ImageView
+            android:id="@+id/ivMenuBtn4"
+            android:layout_below="@+id/ivMenuBtn3"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/menu_exit_btn"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="80%" />
+
+        <ImageView
+            android:layout_below="@id/ivMenuBtn4"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="10%"
+            app:layout_widthPercent="20%" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</layout>
