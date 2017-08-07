@@ -26,6 +26,8 @@
             android:textStyle="bold" />
 
         <ImageView
+            app:layout_marginTopPercent="2%"
+            app:layout_marginRightPercent="6%"
             android:id="@+id/rlExit"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"

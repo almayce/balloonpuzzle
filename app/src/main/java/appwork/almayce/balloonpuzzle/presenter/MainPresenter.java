@@ -32,11 +32,11 @@ public class MainPresenter extends MvpPresenter<MainView> {
         disposable = Observable.interval(1, TimeUnit.MILLISECONDS)
                 .compose(new SchedulersTransformer<>())
                 .subscribe(aLong -> {
-                    if (aLong == 1)
+                    if (aLong == 1000)
                         playSound("voice_balls");
-                    if (aLong == 6400)
+                    if (aLong == 7400)
                         playSound(name);
-                    if (App.isCancelled || App.isDone || aLong > 7000)
+                    if (App.isCancelled || App.isDone || aLong > 9000)
                         disposable.dispose();
                 });
     }

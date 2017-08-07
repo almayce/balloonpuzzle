@@ -200,7 +200,7 @@ public class CharActivity extends MvpAppCompatActivity implements CharView {
         float startX;
         float startY;
 
-        float tolerance = 200F;
+        float tolerance = 100F;
         float dX, dY;
 
         @Override
@@ -232,7 +232,7 @@ public class CharActivity extends MvpAppCompatActivity implements CharView {
                     for (int o = 0; o < markers.size(); o++) {
                         ImageView marker = (ImageView) findViewById(markers.get(o));
                         float correctX = marker.getX() + marker.getWidth() / 2;
-                        float correctY = marker.getY()+  marker.getHeight() / 2;
+                        float correctY = marker.getY() + marker.getHeight() / 2;
 
                         System.out.println(x + " " + correctX);
                         System.out.println(y + " " + correctY);
@@ -242,6 +242,7 @@ public class CharActivity extends MvpAppCompatActivity implements CharView {
                             doneX = true;
                         if (y > correctY - tolerance && y < correctY + tolerance)
                             doneY = true;
+
                         if (doneX && doneY) {
 
                             view.setX(correctX - view.getWidth() / 2);
@@ -257,7 +258,7 @@ public class CharActivity extends MvpAppCompatActivity implements CharView {
                             }
                             break;
 
-                        } else {
+                        } else if (o == markers.size() - 1) {
                             charPresenter.playSound("wrong");
                             view.setX(startX);
                             view.setY(startY);

@@ -75,7 +75,7 @@ public class Markers {
         map.put("Ш", createArray(22));
         map.put("П", createArray(14));
         map.put("Б", createArray(16));
-        map.put("Г", createArray(9));
+        map.put("Г", createArray(10));
         map.put("К", createArray(12));
         map.put("И", createArray(16));
         map.put("Й", createArray(19));

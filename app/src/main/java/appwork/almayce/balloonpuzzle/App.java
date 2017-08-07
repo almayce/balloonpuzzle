@@ -137,7 +137,7 @@ public class App extends Application implements RewardedVideoAdListener {
 
     }
 
-    private static SoundPool sp = new SoundPool(3, AudioManager.STREAM_MUSIC, 100);
+    private static SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 100);
 
     private static Map<String, Integer> soundMap = new HashMap<>();
 

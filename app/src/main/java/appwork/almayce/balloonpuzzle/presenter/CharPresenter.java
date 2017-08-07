@@ -40,9 +40,9 @@ public class CharPresenter extends MvpPresenter<CharView> {
                         App.playSound("well_done_voice1");
                     if (aLong == 2000)
                         App.playSound("try_again");
-                    if (aLong == 2500)
+                    if (aLong == 3500)
                         getViewState().restartActivity();
-                    if (App.isCancelled || aLong > 3000)
+                    if (App.isCancelled || aLong > 6000)
                         disposable.dispose();
                 });
     }
